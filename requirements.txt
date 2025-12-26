@@ -1,2 +1,4 @@
 FastApi
 uvicorn
+psycopg2
+dotenv
