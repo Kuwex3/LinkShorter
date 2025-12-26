@@ -1,10 +1,6 @@
 from fastapi import FastAPI
-from backend.routers.test import router as testRouter
+from backend.routers.sendLongLink import router as sendLongRouter
 
 app = FastAPI()
 
-@app.get("/")
-def mainPage():
-    return "Hello, World!"
-
-app.include_router(testRouter)
+app.include_router(sendLongRouter)
