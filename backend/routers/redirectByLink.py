@@ -8,4 +8,5 @@ router = APIRouter()
 @router.get("/{code}")
 def redirect(code: str):
     fullLink = getFullLinkByCode(code)
-    return RedirectResponse(url=fullLink[0])
+    cleanUrl = fullLink.strip().strip("'")
+    return RedirectResponse(url=cleanUrl)

@@ -6,5 +6,5 @@ router = APIRouter()
 
 @router.post("/sendLongLink/")
 def testHandler(longLink: str):
-    reduceLink(longLink)
-    return longLink
+    code = reduceLink(longLink)
+    return f"127.0.0.1/{code}"

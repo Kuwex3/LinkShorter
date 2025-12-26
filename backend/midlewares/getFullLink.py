@@ -4,10 +4,9 @@ def getFullLinkByCode(code):
     conn = getConn()
     curs = conn.cursor()
     try:
-        curs.execute("SELECT long_link FROM links WHERE short_link = %s", (code,))
+        curs.execute("SELECT long_link FROM links WHERE code = %s", (code,))
         data = curs.fetchone()
-        print(data[0])
-        return data
+        return data[0]
     except Exception as ex:
         return f"Bad! ex:{ex}"
     finally:
