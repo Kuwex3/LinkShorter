@@ -6,3 +6,7 @@ app = FastAPI()
 
 app.include_router(sendLongRouter)
 app.include_router(redirectRouter)
+
+@app.get("/")
+def mainPage():
+    return "Hello!"
