@@ -9,4 +9,4 @@ app.include_router(redirectRouter)
 
 @app.get("/")
 def mainPage():
-    return "Hello, world!"
+    return "Hello world!"
