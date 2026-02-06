@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-from fastapi import Form
 
 from pydantic import BaseModel
 
@@ -7,10 +6,10 @@ from backend.midlewares.reduceLink import reduceLink
 
 router = APIRouter()
 
-class Body(BaseModel):
-    longLink: str
+class Long_link_model(BaseModel):
+    long_link: str
 
 @router.post("/sendLongLink/")
-def testHandler(longLink: Body):
-    code = reduceLink(longLink.longLink)
+def testHandler(longLink: Long_link_model):
+    code = reduceLink(longLink.long_link)
     return code
