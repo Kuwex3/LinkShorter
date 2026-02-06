@@ -1,7 +1,7 @@
 FastApi
 uvicorn
-psycopg2
+psycopg2-binary
 dotenv
 python-multipart
-qrcodepip
-qrcode[pil]
+qrcode
+pillow
