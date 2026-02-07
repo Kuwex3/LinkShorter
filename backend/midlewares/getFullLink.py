@@ -8,7 +8,7 @@ def getFullLinkByCode(code):
         data = curs.fetchone()
         return data[0]
     except Exception as ex:
-        return f"Bad! ex:{ex}"
+        return ex
     finally:
         conn.close()
         curs.close()
