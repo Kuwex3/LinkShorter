@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Shorter</title>
-</head>
-<body>
-    <h1>Shorten Your Link!</h1>
-    <style>
-        #hiddenFrame{
-            display: none;
-        }
-    </style>
-    <form action = "http://127.0.0.1:8000/sendLongLink/" method= "post" target="xxcvv">
-        <input type="text" placeholder = "Enter Full Link" name ="longLink" id="longLink">
-        <input type="submit" value = "Get Shorten Link">
-    </form>
-    <iframe id="hiddenFrame" name="xxcvv"></iframe>
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkShorter — сократи ссылку быстро</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

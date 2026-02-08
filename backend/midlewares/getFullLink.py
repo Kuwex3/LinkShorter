@@ -1,4 +1,4 @@
-from backend.dataBase.getConnection import getConn
+from dataBase.getConnection import getConn
 
 def getFullLinkByCode(code):
     conn = getConn()

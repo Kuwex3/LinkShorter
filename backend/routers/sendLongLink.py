@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from pydantic import BaseModel
 
-from backend.midlewares.reduceLink import reduceLink
+from midlewares.reduceLink import reduceLink
 
 router = APIRouter()
 

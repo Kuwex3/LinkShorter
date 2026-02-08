@@ -1,7 +1,7 @@
-from backend.dataBase.getConnection import getConn
+from dataBase.getConnection import getConn
 
-from backend.midlewares.generateCode import generateCode
-from backend.midlewares.generateQRcode import generate_QR_code
+from midlewares.generateCode import generateCode
+from midlewares.generateQRcode import generate_QR_code
 
 def reduceLink(longLink):
     code = generateCode()

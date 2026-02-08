@@ -1,7 +1,0 @@
-FastApi
-uvicorn
-psycopg2-binary
-dotenv
-python-multipart
-qrcode
-pillow

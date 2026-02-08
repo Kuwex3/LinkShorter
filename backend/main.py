@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from backend.routers.sendLongLink import router as sendLongRouter
-from backend.routers.redirectByLink import router as redirectRouter
+from routers.sendLongLink import router as sendLongRouter
+from routers.redirectByLink import router as redirectRouter
 
 app = FastAPI()
 

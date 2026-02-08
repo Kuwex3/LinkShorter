@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import RedirectResponse
 
-from backend.midlewares.getFullLink import getFullLinkByCode
+from midlewares.getFullLink import getFullLinkByCode
 
 router = APIRouter()
 
