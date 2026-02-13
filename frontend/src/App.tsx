@@ -47,7 +47,7 @@ function App() {
           : data.short_code
 
       if (!code) {
-        throw new Error('Бэк не вернул короткий код')
+        throw new Error('Backend doesnt send a code')
       }
 
       const short = `http://127.0.0.1:8000/${code}`
