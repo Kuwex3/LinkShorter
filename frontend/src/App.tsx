@@ -28,7 +28,7 @@ function App() {
     setLoading(true)
 
     try {
-      const res = await fetch('/api/sendLongLink/', {
+      const res = await fetch('api/sendLongLink/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ long_link: longLink.trim() }),
@@ -50,7 +50,7 @@ function App() {
         throw new Error('Backend doesnt send a code')
       }
 
-      const short = `http://127.0.0.1:8000/${code}`
+      const short = `http://localhost:8000/${code}`
       setShortLink(short)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Что-то пошло не так')
