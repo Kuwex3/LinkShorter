@@ -50,7 +50,7 @@ function App() {
         throw new Error('Backend doesnt send a code')
       }
 
-      const short = `http://localhost:8000/${code}`
+      const short = `http://localhost/api/${code}`
       setShortLink(short)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Что-то пошло не так')
