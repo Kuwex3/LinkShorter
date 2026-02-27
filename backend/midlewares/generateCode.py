@@ -6,7 +6,7 @@ alph = str(digits+ascii_lowercase+ascii_uppercase)
 def generateCode():
     rawMass = []
     for _ in range(6):
-        b = random.choice(alph)
-        rawMass.append(b)
+        symbol = random.choice(alph)
+        rawMass.append(symbol)
     code = "".join(rawMass)
     return code
