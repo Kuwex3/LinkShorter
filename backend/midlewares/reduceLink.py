@@ -13,7 +13,7 @@ def reduceLink(longLink):
         generate_QR_code(code)
         return code
     except Exception as ex:
-        return f"Bad! error:{ex}"
+        return ex
     finally:
         conn.close()
         curs.close()
